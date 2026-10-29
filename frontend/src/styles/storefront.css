@@ -88,7 +88,7 @@ html[data-theme='dark'] .site-header { box-shadow: 0 5px 20px rgba(0, 0, 0, .14)
 .discovery-copy > p:not(.eyebrow) { max-width: 510px; color: #d4e2ec; font-size: 15px; }
 .discovery-copy .button-primary { background: var(--brand-accent); }
 .discovery-shortcuts { margin-top: 24px; }
-html[data-theme] .discovery-shortcut {
+html[data-theme] .discovery-shortcuts > .discovery-shortcut {
   min-height: 68px;
   padding: 11px 12px;
   color: #f4f8fb;
@@ -99,9 +99,10 @@ html[data-theme] .discovery-shortcut {
 .discovery-shortcut > span { color: #ffd2b2; background: rgba(255, 255, 255, .1); border-radius: 8px; }
 .discovery-shortcut strong { color: #fff; font-size: 13px; font-weight: 650; line-height: 1.35; }
 .discovery-shortcut > div { gap: 4px; }
-.discovery-shortcut small, .discovery-shortcut > svg { color: #b9cfde; }
-html[data-theme] .discovery-shortcut:hover { background: rgba(255, 255, 255, .14); border-color: rgba(255, 255, 255, .42); }
-html[data-theme] .discovery-shortcut:focus-visible { color: #fff; background: rgba(255, 255, 255, .17); outline: 2px solid #fff; outline-offset: 3px; border-color: #fff; }
+html[data-theme] .discovery-shortcuts > .discovery-shortcut small,
+html[data-theme] .discovery-shortcuts > .discovery-shortcut > svg { color: #b9cfde; }
+html[data-theme] .discovery-shortcuts > .discovery-shortcut:hover { background: rgba(255, 255, 255, .14); border-color: rgba(255, 255, 255, .42); }
+html[data-theme] .discovery-shortcuts > .discovery-shortcut:focus-visible { color: #fff; background: rgba(255, 255, 255, .17); outline: 2px solid #fff; outline-offset: 3px; border-color: #fff; }
 .discovery-products { gap: 9px; }
 html[data-theme] .discovery-product {
   grid-template-rows: minmax(150px, 1fr) auto;
