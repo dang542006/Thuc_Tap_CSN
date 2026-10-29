@@ -102,7 +102,7 @@ Open the URL printed by Vite, normally `http://localhost:5173`. `CORS_ORIGINS` i
 
 - Visit `http://localhost:5000/api/health`; healthy API responds with `{ success: true, ... }`.
 - Register a customer through the frontend or `POST /api/auth/register`.
-- Seeded users are `admin@bookshop.local`, `lan.nguyen@bookshop.local`, and `minh.tran@bookshop.local`; login password is the value you set in `BOOKSHOP_SEED_PASSWORD` when seeding.
+- The seed script creates local demo users from `backend/prisma/seed.js`; set their shared local password through `BOOKSHOP_SEED_PASSWORD`. Do not use these accounts as production credentials.
 - Run backend checks with `npm test` from `backend/`.
 - Build the frontend with `npm run build` from `frontend/`.
 

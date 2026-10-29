@@ -1,5 +1,17 @@
 # TechStore — hướng dẫn cài đặt và chạy website trên Windows
 
+## Tổng quan dự án cho CV/portfolio
+
+**TechStore** là dự án thương mại điện tử về laptop, PC, linh kiện và phụ kiện. Dự án tách giao diện web, API xử lý nghiệp vụ và database MySQL; hướng dẫn cài đặt cho Windows ở dưới đây dùng database local riêng cho từng thành viên.
+
+**Công nghệ:** React 18, Vite 6 và React Router; Node.js, Express 5; Prisma 6 và MySQL; JWT và bcrypt cho đăng nhập, phân quyền và lưu mật khẩu dạng hash.
+
+**Phần đã triển khai:** duyệt/tìm kiếm/lọc sản phẩm, chi tiết sản phẩm, tài khoản khách hàng, yêu thích, giỏ hàng và đơn hàng; khu vực Admin có kiểm tra quyền tại backend; Build PC lấy linh kiện và giá từ database, kiểm tra socket/kích thước/nguồn và báo `COMPATIBLE`, `INCOMPATIBLE` hoặc `UNKNOWN` tùy dữ liệu có thể xác minh.
+
+**Trạng thái theo lần rà soát ngày 2026-10-29:** backend có 42 bài test đạt và frontend production build thành công. Lần kiểm tra catalog ghi nhận 31 sản phẩm tổng cộng, trong đó có 14 linh kiện cho Build PC; mục tiêu catalog 120–150 linh kiện chưa đạt. Tư vấn sản phẩm đang dùng quy tắc theo catalog; OpenAI chưa được cấu hình. VNPAY chỉ ở môi trường sandbox. Giá và tồn kho local có thể là dữ liệu mẫu.
+
+**Ảnh giao diện:** hiện chưa có ảnh chụp website được kiểm tra trực tiếp trong repository. Kiểm thử hiển thị bằng browser trên desktop/tablet/mobile được ghi là `NOT TESTED`; không coi contact sheet ảnh sản phẩm là ảnh chụp giao diện. Xem [review N11 phần 1–2](docs/n11-medium-part1-2-review.md) để biết chi tiết và các giới hạn.
+
 > **Đã cài project rồi, chỉ tắt máy?** Mở nhanh phần [Cách chạy nhanh sau khi đã cài đặt](#3-cách-chạy-nhanh-sau-khi-đã-cài-đặt). Bật MySQL nếu cần, rồi chạy backend và frontend trong hai Terminal. Không cài lại thư viện, tạo database mới hoặc chạy seed hằng ngày.
 
 ## 1. TechStore là gì?
