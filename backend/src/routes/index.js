@@ -1,0 +1,33 @@
+import { Router } from 'express';
+import authRoutes from './auth.routes.js';
+import bookRoutes from './book.routes.js';
+import categoryRoutes from './category.routes.js';
+import cartRoutes from './cart.routes.js';
+import orderRoutes from './order.routes.js';
+import reviewRoutes from './review.routes.js';
+import membershipRoutes from './membership.routes.js';
+import adminRoutes from './admin.routes.js';
+import profileRoutes from './profile.routes.js';
+import promotionRoutes from './promotion.routes.js';
+import newsletterRoutes from './newsletter.routes.js';
+import advisorRoutes from './advisor.routes.js';
+import paymentRoutes from './payment.routes.js';
+import pcBuilderRoutes from './pcBuilder.routes.js';
+
+const router = Router();
+router.use('/auth', authRoutes);
+router.use('/users', profileRoutes);
+router.use('/books', bookRoutes);
+router.use('/categories', categoryRoutes);
+router.use('/cart', cartRoutes);
+router.use('/orders', orderRoutes);
+router.use('/payments', paymentRoutes);
+router.use('/reviews', reviewRoutes);
+router.use('/membership', membershipRoutes);
+router.use('/admin', adminRoutes);
+router.use('/promotions', promotionRoutes);
+router.use('/newsletter', newsletterRoutes);
+router.use('/advisor', advisorRoutes);
+router.use('/pc-builder', pcBuilderRoutes);
+
+export default router;

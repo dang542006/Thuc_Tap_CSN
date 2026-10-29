@@ -1,0 +1,281 @@
+[
+  {
+    "slug": "thinkpad-e14-gen-6",
+    "imageFile": "lenovo-thinkpad-e14-gen-6.jpg",
+    "kind": "product-photo",
+    "imageSource": "https://p3-ofp.static.pub/fes/cms/2025/12/15/e8npz0jdujygyiuonuk0rg6ngofdrd326160.png",
+    "sourcePage": "https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpade/thinkpad-e14-gen-6-14-inch-intel/len101t0088",
+    "verification": "IMAGE_URL_RECORDED_MODEL_REVIEWED",
+    "note": "Local product photo; direct image source and product page recorded. Asset reviewed in contact sheet."
+  },
+  {
+    "slug": "kingston-fury-beast-16gb-ddr5",
+    "imageFile": "kingston-fury-beast-16gb-ddr5.png",
+    "kind": "product-photo",
+    "imageSource": "https://cdn.hstatic.net/products/200000722513/ram-kingston-fury-beast-16gb-1x16gb-buss-5600-ddr5-kf556c40bb-16wp-1_ded4ad8cf01b405bb320cfe4713cb001_grande.png",
+    "sourcePage": "https://gearvn.com/products/ram-kingston-fury-beast-16gb-1x16gb-buss-5600-ddr5-kf556c40bb-16wp",
+    "verification": "IMAGE_URL_RECORDED_MODEL_REVIEWED",
+    "note": "Local product photo; direct image source and product page recorded. Asset reviewed in contact sheet."
+  },
+  {
+    "slug": "logitech-g102-lightsync",
+    "imageFile": "logitech-g102-lightsync.jpg",
+    "kind": "product-photo",
+    "imageSource": "https://product.hstatic.net/200000722513/product/logitech-g102-lightsync-rgb-black-1_bf4f5774229c4a0f81b8e8a2feebe4d8_aeb4ae49ee844c3e9d315883d4e482d4.jpg",
+    "sourcePage": "https://gearvn.com/products/chuot-logitech-g102-lightsync-rgb-black",
+    "verification": "IMAGE_URL_RECORDED_MODEL_REVIEWED",
+    "note": "Local product photo; direct image source and product page recorded. Asset reviewed in contact sheet."
+  },
+  {
+    "slug": "asus-vivobook-15-x1504va",
+    "imageFile": "asus-vivobook-15-x1504va.webp",
+    "kind": "official-product-render",
+    "imageSource": "https://dlcdnwebimgs.asus.com/gain/a57df082-80c1-4b35-9493-ff9727e4e7a4",
+    "sourcePage": "https://www.asus.com/ph/laptops/for-home/vivobook/asus-vivobook-15-x1504/techspec/",
+    "verification": "OFFICIAL_MODEL_ASSET_VERIFIED_NOT_PHOTOGRAPH",
+    "note": "Official ASUS model asset; photorealistic product render, not a camera photograph. Model row X1504VA on the linked source page."
+  },
+  {
+    "slug": "dell-inspiron-5440-i5-16gb",
+    "imageFile": "dell-inspiron-5440-i5-16gb.jpg",
+    "kind": "product-photo",
+    "imageSource": "https://cdn.hstatic.net/products/200000722513/5440-pus-i5-1334u-512gb-16gb-ddr5-14-fhd-w11-carbon-black-nhap-khau-10_60834ee5ec284cd085dbe2b4d535f8b7.jpg",
+    "sourcePage": "https://gearvn.com/products/laptop-dell-inspiron-5440-pus-i5-1334u-512gb-16gb-ddr5-14-fhd-w11-carbon-black-nhap-khau",
+    "note": "Direct product image from the Dell Inspiron 5440 listing; downloaded locally and visually reviewed.",
+    "verification": "RETAILER_PRODUCT_PAGE_IMAGE_MODEL_VERIFIED"
+  },
+  {
+    "slug": "acer-aspire-5-a515-58m-79r7",
+    "imageFile": "acer-aspire-5-a515-58m-79r7.png",
+    "kind": "product-photo",
+    "imageSource": "https://product.hstatic.net/200000722513/product/gearvn-laptop-acer-aspire-5-a515-58m-79r7-1_fc24c1d89e264f0dac67c840aba8e473.png",
+    "sourcePage": "https://gearvn.com/products/laptop-acer-aspire-5-a515-58m-79r7",
+    "note": "Direct product image from the exact Acer Aspire 5 A515-58M-79R7 listing; local bytes match the source and image reviewed.",
+    "verification": "RETAILER_PRODUCT_PAGE_IMAGE_MODEL_VERIFIED"
+  },
+  {
+    "slug": "lenovo-ideapad-slim-5-14irl8",
+    "imageFile": "lenovo-ideapad-slim-5-14irl8.jpg",
+    "kind": "official-product-render",
+    "imageSource": "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_5_14IRL8/IdeaPad_Slim_5_14IRL8_Spec.pdf#page=8 (embedded product image)",
+    "sourcePage": "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_5_14IRL8/IdeaPad_Slim_5_14IRL8_Spec.pdf",
+    "verification": "OFFICIAL_MODEL_ASSET_VERIFIED_NOT_PHOTOGRAPH",
+    "note": "Product render extracted from Lenovo PSREF for IdeaPad Slim 5 14IRL8, page 8, image visually reviewed; not a camera photograph."
+  },
+  {
+    "slug": "hp-15-fd-series",
+    "imageFile": "hp-15-fd-series.jpg",
+    "kind": "unverified-photo",
+    "imageSource": null,
+    "sourcePage": "https://jp.ext.hp.com/notebooks/personal/hp_15_fd/",
+    "note": "Photo-like asset; direct image URL and exact model correspondence still need verification.",
+    "verification": "PHOTO_SOURCE_NOT_VERIFIED"
+  },
+  {
+    "slug": "asus-tuf-gaming-a15-fa507nv",
+    "imageFile": "asus-tuf-gaming-a15-fa507nv.webp",
+    "kind": "official-product-render",
+    "imageSource": "https://dlcdnwebimgs.asus.com/gain/7909b0a1-1457-4953-a9e7-41b2be78affa",
+    "sourcePage": "https://www.asus.com/no/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-a15-2023/techspec/",
+    "verification": "OFFICIAL_MODEL_ASSET_VERIFIED_NOT_PHOTOGRAPH",
+    "note": "Official ASUS product render linked beside the FA507NV model listing; photo page reviewed. The asset is a render, not a camera photograph."
+  },
+  {
+    "slug": "acer-nitro-v15-anv15-41-r2up",
+    "imageFile": "acer-nitro-v15-anv15-41-r2up-retailer.jpg",
+    "kind": "retailer-product-image",
+    "imageSource": "https://cdn-files.hacom.vn/hacom/cdn/web/25022026/Laptop-Acer-Nitro-V-15-ANV15-41-R2UP-NH.QPGSV.004-R5-6600H116GB-RAM512GB-SSDRTX-2050-4GB15.6-inch-FHD-165HzWin-11Den-Likenew-Full-box-1.jpg",
+    "sourcePage": "https://hacom.vn/laptop-acer-nitro-v-15-anv15-41-r2up-ltms00011",
+    "verification": "RETAILER_PAGE_MODEL_MATCHED_IMAGE_VISUALLY_INSPECTED",
+    "note": "Retailer listing identifies exact Acer Nitro V ANV15-41-R2UP; image is a clean packshot/render, not a camera photograph."
+  },
+  {
+    "slug": "wd-blue-sn580-1tb-nvme",
+    "imageFile": "wd-blue-sn580-1tb-nvme-retailer.jpg",
+    "kind": "retailer-product-image",
+    "imageSource": "https://bizweb.dktcdn.net/100/329/122/products/ssd-western-digital-blue-sn580-1tb-pcie-gen4-x4-nvme-m-2-wds100t3b0e.jpg?v=1754758883310",
+    "sourcePage": "https://memoryzone.com.vn/ssd-western-digital-blue-sn580-1tb-pcie-gen4-x4-nvme-m-2-wds100t3b0e",
+    "verification": "RETAILER_PAGE_MODEL_MATCHED_IMAGE_VISUALLY_INSPECTED",
+    "note": "Retailer image visibly labels WD Blue SN580, PCIe 4.0 and 1TB; isolated product packshot."
+  },
+  {
+    "slug": "samsung-990-evo-plus-1tb",
+    "imageFile": "samsung-990-evo-plus-1tb-retailer.jpg",
+    "kind": "retailer-product-image",
+    "imageSource": "https://down-sg.img.susercontent.com/file/sg-11134201-7rffz-m9y563d5uqmx08",
+    "sourcePage": "https://shopee.sg/Samsung-990-EVO-Plus-NVMe-M.2-SSD-i.412971223.27616462695",
+    "verification": "RETAILER_PAGE_MODEL_MATCHED_IMAGE_VISUALLY_INSPECTED",
+    "note": "Shopee listing identifies 990 EVO Plus NVMe M.2 SSD 1TB; image includes Official Store and model text."
+  },
+  {
+    "slug": "crucial-p3-plus-1tb",
+    "imageFile": "crucial-p3-plus-1tb-retailer.jpg",
+    "kind": "retailer-product-image",
+    "imageSource": "https://ecommerce.datablitz.com.ph/cdn/shop/files/bxdgnxfg_1024x.jpg?v=1749543843",
+    "sourcePage": "https://ecommerce.datablitz.com.ph/products/crucial-p3-plus-1tb-pcie-m-2-2280-ssd-ct1000p3pssd8",
+    "verification": "RETAILER_PAGE_MODEL_MATCHED_IMAGE_VISUALLY_INSPECTED",
+    "note": "Retailer page is for Crucial P3 Plus CT1000P3PSSD8; image visibly identifies P3 Plus and 1TB."
+  },
+  {
+    "slug": "asus-dual-geforce-rtx-4060-8gb",
+    "imageFile": "asus-dual-geforce-rtx-4060-8gb-retailer.jpg",
+    "kind": "retailer-product-image",
+    "imageSource": "https://media.topachat.com/media/s550/6499a5f10682736fb65963e6.jpg",
+    "sourcePage": "https://www.topachat.com/pages/detail2_cat_est_micro_puis_rubrique_est_wgfx_pcie_puis_ref_est_in20019027.html",
+    "verification": "RETAILER_PAGE_MODEL_MATCHED_IMAGE_VISUALLY_INSPECTED",
+    "note": "Retailer image shows ASUS Dual GeForce RTX 4060 8GB card and matching box."
+  },
+  {
+    "slug": "gigabyte-b760m-ds3h-ddr4",
+    "imageFile": "gigabyte-b760m-ds3h-ddr4-retailer.jpg",
+    "kind": "retailer-product-image",
+    "imageSource": "https://i5.walmartimages.com/asr/219ea22f-ef52-45f5-89d8-37008f87cb49.fc6d24a49d5524d399ae3dce68b683d1.jpeg?odnBg=FFFFFF&odnHeight=2000&odnWidth=2000",
+    "sourcePage": "https://www.walmart.ca/en/ip/GIGABYTE-B760M-DS3H-Micro-ATX-Motherboard-LGA1700-Socket-B760-Chipset-New/0ZLA96PMRL6B",
+    "verification": "RETAILER_PAGE_MODEL_MATCHED_IMAGE_VISUALLY_INSPECTED",
+    "note": "The box in the retailer image visibly identifies B760M DS3H DDR4; board layout matches the listing."
+  },
+  {
+    "slug": "msi-mag-a650bn-650w",
+    "imageFile": "msi-mag-a650bn-650w.webp",
+    "kind": "official-product-render",
+    "imageSource": "https://storage-asset.msi.com/datasheet/power-supply/in/MAG-A650BN.pdf (page 1 embedded product image)",
+    "sourcePage": "https://storage-asset.msi.com/datasheet/power-supply/in/MAG-A650BN.pdf",
+    "verification": "OFFICIAL_MODEL_ASSET_VERIFIED_NOT_PHOTOGRAPH",
+    "note": "MSI MAG A650BN product render extracted from the official datasheet; exact model named on the PDF page; not a camera photograph."
+  },
+  {
+    "slug": "deepcool-ak400-cpu-cooler",
+    "imageFile": "deepcool-ak400-cpu-cooler-retailer.png",
+    "kind": "retailer-product-image",
+    "imageSource": "https://fly.bg/uploads/products/as/deepcool_ak400_cpu_air_cooler_1x120mm_pwm_fan_tdp_gwx9n.jpg",
+    "sourcePage": "https://fly.bg/deepcool-ak400-cpu-air-cooler-1x120mm-pwm-fan-td-ak400-257271",
+    "verification": "RETAILER_PAGE_MODEL_MATCHED_IMAGE_VISUALLY_INSPECTED",
+    "note": "Retailer page names DeepCool AK400; image is a studio packshot/render."
+  },
+  {
+    "slug": "logitech-m331-silent-plus",
+    "imageFile": "logitech-m331-silent-plus-retailer.png",
+    "kind": "retailer-product-image",
+    "imageSource": "https://bizweb.dktcdn.net/100/326/151/products/4324341.png?v=1734687939553",
+    "sourcePage": "https://www.kimlong.vn/mouse-logitech-m331-wireless-optical-den-black",
+    "verification": "RETAILER_PAGE_MODEL_MATCHED_IMAGE_VISUALLY_INSPECTED",
+    "note": "Retailer page identifies Logitech M331; image shows the matching black product, isolated on transparent background."
+  },
+  {
+    "slug": "logitech-pebble-keys-2-k380s",
+    "imageFile": "logitech-pebble-keys-2-k380s.webp",
+    "kind": "product-photo",
+    "imageSource": "https://resource.logitech.com/content/dam/logitech/en/products/keyboards/pebble-keys-2-k380s/2026/gallery/tonal-graphite/pebble-keys-k380s-2-tonal-graphite-top-angle-gallery-1.png",
+    "sourcePage": "https://www.logitech.com/en-us/shop/p/pebble-keys-2.920-011775",
+    "verification": "OFFICIAL_PRODUCT_PHOTO_MODEL_VERIFIED",
+    "note": "Official Logitech gallery image showing the graphite Pebble Keys 2 K380s packshot; saved locally and visually reviewed."
+  },
+  {
+    "slug": "logitech-g435-lightspeed",
+    "imageFile": "logitech-g435-lightspeed.png",
+    "kind": "official-product-render",
+    "imageSource": "https://resource.logitechg.com/w_544%2Ch_466%2Car_7%3A6%2Cc_pad%2Cq_auto%2Cf_auto%2Cdpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g435/2025/gallery/g435-3qtr-front-left-angle-black-gallery-1.png",
+    "sourcePage": "https://www-gaming.logitech.com/en-gb/shop/p/g435-wireless-bluetooth-gaming-headset.981-001050",
+    "verification": "OFFICIAL_MODEL_ASSET_VERIFIED_NOT_PHOTOGRAPH",
+    "note": "Official Logitech G gallery packshot for G435 black/neon yellow; downloaded locally and visually verified. Product render, not a camera photograph."
+  },
+  {
+    "slug": "razer-deathadder-essential",
+    "imageFile": "razer-deathadder-essential-retailer.jpg",
+    "kind": "retailer-product-image",
+    "imageSource": "https://product.hstatic.net/200000722513/product/thumbchuot_7445abea69bf461e881eeba2b6cbbd8d.jpg",
+    "sourcePage": "https://gearvn.com/products/razer-deathadder-essential",
+    "verification": "RETAILER_PAGE_MODEL_MATCHED_IMAGE_VISUALLY_INSPECTED",
+    "note": "GEARVN page identifies RZ01-03850100-R3M1; image shows the matching black wired mouse."
+  },
+  {
+    "slug": "logitech-c270-hd-webcam",
+    "imageFile": "logitech-c270-hd-webcam-retailer.jpg",
+    "kind": "retailer-product-image",
+    "imageSource": "https://product.hstatic.net/200000420363/product/wc-lgt-c270-3-new_f58aa5f99ec64a599d474807f8321b49_1024x1024.jpg",
+    "sourcePage": "https://tinhocngoisao.com/products/webcam-logitech-c270-hd-720p-30-fps-microphone-usb-960-000694",
+    "verification": "RETAILER_PAGE_MODEL_MATCHED_IMAGE_VISUALLY_INSPECTED",
+    "note": "Retailer page identifies Logitech C270 960-000694; image shows the camera and matching retail box."
+  },
+  {
+    "slug": "hyperx-cloud-stinger-2-core",
+    "imageFile": "hyperx-cloud-stinger-2-core-retailer.jpg",
+    "kind": "retailer-product-image",
+    "imageSource": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/164/16474/16474334_7.jpg",
+    "sourcePage": "https://www.bestbuy.ca/en-ca/product/hyperx-cloud-stinger-2-core-gaming-headset-black/16474334",
+    "verification": "RETAILER_PAGE_MODEL_MATCHED_IMAGE_VISUALLY_INSPECTED",
+    "note": "Best Buy page identifies Cloud Stinger 2 Core black wired headset; image shows matching headset and box."
+  },
+  {
+    "slug": "tp-link-archer-tx20u-plus",
+    "imageFile": "tp-link-archer-tx20u-plus.jpg",
+    "kind": "official-product-render",
+    "imageSource": "https://static.tp-link.com/upload/image-line/Archer_TX20U_Plus_2000px_normal_20230809095804d.jpg",
+    "sourcePage": "https://www.tp-link.com/uk/home-networking/adapter/archer-tx20u-plus/",
+    "verification": "OFFICIAL_MODEL_ASSET_VERIFIED_NOT_PHOTOGRAPH",
+    "note": "Official TP-Link gallery asset for Archer TX20U Plus; the two antennas, desktop base and USB lead were visually checked. Product render, not a camera photograph."
+  },
+  {
+    "slug": "amd-ryzen-5-7600-desktop-cpu",
+    "imageFile": "amd-ryzen-5-7600-desktop-cpu-retailer.jpg",
+    "kind": "retailer-product-image",
+    "imageSource": "https://nguyencongpc.vn/media/product/24146-cpu-amd-ryzen-5-7600-04.jpg",
+    "sourcePage": "https://nguyencongpc.vn/amd-ryzen-5-7600",
+    "note": "Retailer photograph visibly shows the Ryzen 5 7600 package and CPU marking.",
+    "verification": "RETAILER_PAGE_MODEL_MATCHED_IMAGE_VISUALLY_INSPECTED"
+  },
+  {
+    "slug": "amd-ryzen-5-5600-am4",
+    "imageFile": "amd-ryzen-5-5600-tray.jpg",
+    "kind": "retailer-product-image",
+    "imageSource": "https://neocomputer.md/image/cache/catalog/products/ui-products/54fcc760-4c07-11ea-b816-00155d1de702/ab1afec4-f690-494f-a9a4-abda06d5dc1b-1000x1000.jpg",
+    "sourcePage": "https://neocomputer.md/amd-ryzen-5-5600-tray",
+    "verification": "MODEL_TEXT_VISUALLY_REVIEWED_SOURCE_RECORDED",
+    "note": "Local image visually shows the Ryzen 5 5600 marking on the processor heat spreader; listing is the tray variant, not the boxed SKU."
+  },
+  {
+    "slug": "asus-prime-b650m-a",
+    "imageFile": "asus-prime-b650m-a.png",
+    "kind": "official-product-render",
+    "imageSource": "https://dlcdnwebimgs.asus.com/gain/ae72da32-4c41-4294-967b-3a918e8b9923/w692",
+    "sourcePage": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b650m-a/techspec/",
+    "verification": "OFFICIAL_MODEL_ASSET_VISUALLY_MATCHED_NOT_PHOTOGRAPH",
+    "note": "Official ASUS asset visually shows the PRIME B650M-A board and matching retail box; product render, not a camera photograph."
+  },
+  {
+    "slug": "kingston-fury-beast-kf560c36bbe2k2-32",
+    "imageFile": "kingston-fury-beast-kf560c36bbe2k2-32.jpg",
+    "kind": "retailer-product-image",
+    "imageSource": "https://img.al-style.kz/75700_1.jpg",
+    "sourcePage": "https://al-style.kz/catalog/ddr5/komplekt_moduley_pamyati_kingston_fury_beast_black_kf560c36bbe2k2_32_ddr5_32gb_kit_2x16gb_6000mhz/",
+    "verification": "RETAILER_IMAGE_MODEL_LABEL_VISUALLY_MATCHED",
+    "note": "The local product image shows two modules and the exact KF560C36BBE2K2-32 label; retailer image, not counted as a camera photograph."
+  },
+  {
+    "slug": "cooler-master-masterbox-nr600-odd",
+    "imageFile": "cooler-master-masterbox-nr600-odd.png",
+    "kind": "official-product-render",
+    "imageSource": "https://www.coolermaster.com/on/demandware.static/-/Sites-cooler-master-main/default/dwecd3d87c/Assets/masterbox-nr600-with-odd/large/masterbox-nr600-gallery-1.png",
+    "sourcePage": "https://www.coolermaster.com/en-us/products/masterbox-nr600-with-odd.html",
+    "verification": "OFFICIAL_MODEL_ASSET_VISUALLY_MATCHED_NOT_PHOTOGRAPH",
+    "note": "Official Cooler Master gallery render for MasterBox NR600 with ODD, reviewed locally; render, not a camera photograph."
+  },
+  {
+    "slug": "noctua-nf-a12x25-pwm-120mm",
+    "imageFile": "noctua-nf-a12x25-pwm-120mm.jpg",
+    "kind": "retailer-product-image",
+    "imageSource": "https://cs-d.ecimg.tw/items/DRAEBNA900A2F83/000001_1559896901.jpg",
+    "sourcePage": "https://24h.pchome.com.tw/prod/DRAEBN-A900A2F83",
+    "verification": "RETAILER_IMAGE_MODEL_TEXT_VISUALLY_MATCHED",
+    "note": "The local PChome image includes the NF-A12x25 PWM product name and 120mm/4-pin details; retailer product image, not counted as a camera photograph."
+  },
+  {
+    "slug": "aa",
+    "imageFile": null,
+    "kind": "missing-image",
+    "imageSource": null,
+    "sourcePage": null,
+    "verification": "NOT_AVAILABLE",
+    "note": "Pre-existing active catalog row has no image or verified model identity. Left unchanged; ProductImage fallback is expected."
+  }
+]

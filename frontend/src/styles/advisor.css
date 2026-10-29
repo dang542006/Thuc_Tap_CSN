@@ -1,0 +1,49 @@
+html[data-theme] .advisor-launcher { position: fixed; z-index: 35; bottom: 24px; right: 24px; display: flex; align-items: center; gap: 9px; padding: 13px 18px; border-radius: 30px; border: 1px solid var(--line); color: var(--paper); background: var(--ink); font: inherit; font-size: 13px; font-weight: 600; box-shadow: 0 4px 16px #0002; cursor: pointer; }
+html[data-theme] .advisor-dialog { box-sizing: border-box; width: min(440px, calc(100vw - 32px)); height: min(720px, calc(100dvh - 48px)); max-height: none; max-width: none; inset: auto 24px 24px auto; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: 16px; color: var(--ink); background: var(--surface); box-shadow: 0 12px 48px #0003; }
+.advisor-dialog[open] { display: flex; flex-direction: column; }
+.advisor-dialog::backdrop { background: #0003; }
+.advisor-heading { padding: 20px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--line); flex-shrink: 0; }
+.advisor-heading > div { flex: 1; min-width: 0; }
+.advisor-heading h2 { font-size: 18px; margin: 0; }
+.advisor-heading p { color: var(--muted); font-size: 12px; margin: 5px 0 0; }
+.advisor-messages { padding: 20px; min-height: 0; flex: 1; overflow-y: auto; overscroll-behavior: contain; }
+.advisor-message { margin-bottom: 18px; font-size: 14px; line-height: 1.65; overflow-wrap: anywhere; }
+.advisor-message > p { margin: 0 0 10px; white-space: pre-wrap; }
+.advisor-user { margin-left: 30px; padding: 12px 16px; background: var(--surface-muted); border: 1px solid var(--line); border-radius: 14px 14px 2px 14px; }
+.advisor-user > p { margin: 0; }
+.advisor-criteria { font-size: 12px; color: var(--muted); }
+.advisor-alternative { display: block; font-size: 12px; color: var(--status-warning-text); margin-block: 8px; }
+.advisor-mode { display: inline-block; margin: 0 0 8px; border: 1px solid var(--line); border-radius: 20px; padding: 4px 9px; color: var(--muted); font-size: 10px; }
+.advisor-mode-ai { color: var(--status-success-text, #176b49); }
+.advisor-product { margin-block: 10px; padding: 9px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface-subtle); }
+.advisor-product .advisor-book { margin: 0; padding: 4px; border: 0; background: transparent; }
+.advisor-product .advisor-book > img, .advisor-product .advisor-book > .product-image-fallback { width: 72px; height: 72px; object-fit: contain; border-radius: 8px; }
+.advisor-reason, .advisor-limit { margin: 8px 3px 0 !important; color: var(--muted); font-size: 11px; line-height: 1.5; }
+.advisor-limit { color: var(--status-warning-text, var(--muted)); }
+.advisor-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+.advisor-fields label { font-size: 10px; color: var(--muted); }
+.advisor-fields input, .advisor-fields select { display: block; box-sizing: border-box; width: 100%; min-width: 0; margin-top: 4px; padding: 8px; border: 1px solid var(--field-border); border-radius: 7px; color: var(--ink); background: var(--field-bg); font: inherit; font-size: 11px; }
+.advisor-book { display: grid; grid-template-columns: 58px minmax(0, 1fr); gap: 12px; margin-block: 10px; padding: 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface-subtle); }
+.advisor-book > img, .advisor-book > .book-cover-fallback { width: 58px; height: 82px; object-fit: contain; }
+.advisor-book strong { display: block; font-size: 13px; line-height: 1.5; }
+.advisor-book span { display: block; color: var(--muted); font-size: 11px; margin: 5px 0; }
+.advisor-book b { display: block; font-size: 14px; }
+.advisor-book small { display: flex; align-items: center; gap: 4px; font-size: 11px; }
+.advisor-suggestions { display: flex; gap: 8px; flex-wrap: wrap; margin-block: 12px; }
+.advisor-suggestions button { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; color: var(--ink); font-size: 12px; padding: 8px 12px; cursor: pointer; text-align: left; }
+.advisor-loading { color: var(--muted); font-size: 13px; }
+.advisor-form { flex-shrink: 0; padding: 16px 20px; border-top: 1px solid var(--line); }
+.advisor-form label { display: block; font-size: 12px; margin-bottom: 8px; }
+.advisor-form > div { display: flex; gap: 8px; }
+.advisor-form input { min-width: 0; flex: 1; width: 100%; padding: 12px; font: inherit; font-size: 14px; border: 1px solid var(--field-border); background: var(--field-bg); color: var(--ink); border-radius: 8px; }
+.advisor-form button { flex: none; width: 42px; border: 0; border-radius: 8px; color: var(--paper); background: var(--ink); display: grid; place-items: center; cursor: pointer; }
+.advisor-form > p:last-child { margin: 8px 0 0; font-size: 10px; color: var(--muted); line-height: 1.6; }
+.advisor-dialog button:disabled { opacity: .5; cursor: not-allowed; }
+.advisor-dialog button:focus-visible, .advisor-dialog a:focus-visible, .advisor-launcher:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+@media (max-width: 600px) {
+  html[data-theme] .advisor-launcher { right: 16px; bottom: 16px; padding: 12px; }
+  html[data-theme] .advisor-dialog { inset: auto 12px max(12px, env(safe-area-inset-bottom)) auto; width: calc(100vw - 24px); height: min(680px, calc(100dvh - 24px)); }
+  .advisor-heading, .advisor-messages { padding: 16px; }
+  .advisor-form { padding: 12px 16px; }
+  .advisor-fields { grid-template-columns: 1fr; max-height: 130px; overflow-y: auto; }
+}

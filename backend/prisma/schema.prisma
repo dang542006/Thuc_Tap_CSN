@@ -1,0 +1,360 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  CUSTOMER
+  ADMIN
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum RecordStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  PROCESSING
+  SHIPPING
+  DELIVERED
+  CANCELLED
+}
+
+enum PaymentMethod {
+  COD
+  BANK_TRANSFER
+  CARD
+  E_WALLET
+  VNPAY
+}
+
+enum PaymentStatus {
+  PENDING
+  PAID
+  FAILED
+  REFUNDED
+}
+
+enum DiscountType {
+  PERCENTAGE
+  FIXED_AMOUNT
+}
+
+model User {
+  id              String     @id @default(cuid()) @db.VarChar(30)
+  name            String     @db.VarChar(120)
+  email           String     @unique @db.VarChar(254)
+  password        String     @db.VarChar(255)
+  phone           String?    @unique @db.VarChar(30)
+  address         String?    @db.VarChar(500)
+  role            UserRole   @default(CUSTOMER)
+  status          UserStatus @default(ACTIVE)
+  points          Int        @default(0)
+  membershipLevel String     @default("BRONZE") @db.VarChar(32)
+  createdAt       DateTime   @default(now()) @db.DateTime(3)
+  updatedAt       DateTime   @updatedAt @db.DateTime(3)
+  addresses       Address[]
+  cart            Cart?
+  orders          Order[]
+  reviews         Review[]
+  favorites       Favorite[]
+  giftCards       GiftCard[]
+
+  @@index([role, status], map: "User_role_status_idx")
+}
+
+model Address {
+  id             String   @id @default(cuid()) @db.VarChar(30)
+  userId         String   @db.VarChar(30)
+  receiverName   String   @db.VarChar(120)
+  phoneNumber    String   @db.VarChar(30)
+  fullAddress    String   @db.VarChar(500)
+  addressType    String   @default("HOME") @db.VarChar(40)
+  defaultAddress Boolean  @default(false)
+  createdAt      DateTime @default(now()) @db.DateTime(3)
+  updatedAt      DateTime @updatedAt @db.DateTime(3)
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  @@index([userId, defaultAddress], map: "Address_userId_defaultAddress_idx")
+}
+
+model Category {
+  id          String       @id @default(cuid()) @db.VarChar(30)
+  name        String       @db.VarChar(120)
+  slug        String       @unique @db.VarChar(140)
+  description String?      @db.Text
+  status      RecordStatus @default(ACTIVE)
+  parentId    String?      @db.VarChar(30)
+  createdAt   DateTime     @default(now()) @db.DateTime(3)
+  updatedAt   DateTime     @updatedAt @db.DateTime(3)
+  books       Book[]
+  parent      Category?    @relation("CategoryTree", fields: [parentId], references: [id], onDelete: SetNull, onUpdate: Cascade)
+  children    Category[]   @relation("CategoryTree")
+
+  @@index([status, name], map: "Category_status_name_idx")
+  @@index([parentId, status], map: "Category_parentId_status_idx")
+}
+
+model Book {
+  id             String        @id @default(cuid()) @db.VarChar(30)
+  title          String        @db.VarChar(255)
+  slug           String        @unique @db.VarChar(280)
+  author         String        @db.VarChar(180)
+  isbn           String?       @unique @db.VarChar(20)
+  description    String?       @db.Text
+  image          String?       @db.VarChar(2048)
+  price          Decimal       @db.Decimal(10, 2)
+  discountPrice  Decimal?      @db.Decimal(10, 2)
+  stock          Int           @default(0)
+  publisher      String?       @db.VarChar(180)
+  publishedAt    DateTime?     @db.DateTime(3)
+  status         RecordStatus  @default(ACTIVE)
+  categoryId     String        @db.VarChar(30)
+  createdAt      DateTime      @default(now()) @db.DateTime(3)
+  updatedAt      DateTime      @updatedAt @db.DateTime(3)
+  brand          String        @default("") @db.VarChar(120)
+  specifications Json?
+  category       Category      @relation(fields: [categoryId], references: [id], onDelete: Restrict, onUpdate: Cascade)
+  cartItems      CartItem[]
+  orderItems     OrderItem[]
+  reviews        Review[]
+  favorites      Favorite[]
+  optionGroups   OptionGroup[]
+
+  @@index([categoryId, status], map: "Book_categoryId_status_idx")
+  @@index([title], map: "Book_title_idx")
+  @@index([author], map: "Book_author_idx")
+}
+
+model Cart {
+  id        String     @id @default(cuid()) @db.VarChar(30)
+  userId    String     @unique @db.VarChar(30)
+  createdAt DateTime   @default(now()) @db.DateTime(3)
+  updatedAt DateTime   @updatedAt @db.DateTime(3)
+  user      User       @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  items     CartItem[]
+}
+
+model CartItem {
+  id              String   @id @default(cuid()) @db.VarChar(30)
+  cartId          String   @db.VarChar(30)
+  bookId          String   @db.VarChar(30)
+  quantity        Int      @default(1)
+  createdAt       DateTime @default(now()) @db.DateTime(3)
+  updatedAt       DateTime @updatedAt @db.DateTime(3)
+  selectedOptions Json?
+  cart            Cart     @relation(fields: [cartId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  book            Book     @relation(fields: [bookId], references: [id], onDelete: Restrict, onUpdate: Cascade)
+
+  @@index([bookId], map: "CartItem_bookId_idx")
+  @@index([cartId, bookId], map: "CartItem_cartId_bookId_idx")
+}
+
+model Order {
+  id              String               @id @default(cuid()) @db.VarChar(30)
+  orderNumber     String               @unique @db.VarChar(40)
+  userId          String               @db.VarChar(30)
+  orderStatus     OrderStatus          @default(PENDING)
+  subtotal        Decimal              @db.Decimal(10, 2)
+  discount        Decimal              @default(0) @db.Decimal(10, 2)
+  shippingFee     Decimal              @default(0) @db.Decimal(10, 2)
+  total           Decimal              @db.Decimal(10, 2)
+  shippingAddress String               @db.VarChar(500)
+  paymentMethod   PaymentMethod
+  paymentStatus   PaymentStatus        @default(PENDING)
+  note            String?              @db.VarChar(1000)
+  promotionId     String?              @db.VarChar(30)
+  createdAt       DateTime             @default(now()) @db.DateTime(3)
+  updatedAt       DateTime             @updatedAt @db.DateTime(3)
+  receiverPhone   String?              @db.VarChar(30)
+  receiverName    String?              @db.VarChar(120)
+  user            User                 @relation(fields: [userId], references: [id], onDelete: Restrict, onUpdate: Cascade)
+  promotion       Promotion?           @relation(fields: [promotionId], references: [id], onDelete: SetNull, onUpdate: Cascade)
+  items           OrderItem[]
+  payments        Payment[]
+  statusHistory   OrderStatusHistory[]
+
+  @@index([userId, createdAt], map: "Order_userId_createdAt_idx")
+  @@index([orderStatus, createdAt], map: "Order_orderStatus_createdAt_idx")
+}
+
+model OrderItem {
+  id            String   @id @default(cuid()) @db.VarChar(30)
+  orderId       String   @db.VarChar(30)
+  bookId        String   @db.VarChar(30)
+  title         String   @db.VarChar(255)
+  unitPrice     Decimal  @db.Decimal(10, 2)
+  quantity      Int
+  subtotal      Decimal  @db.Decimal(10, 2)
+  createdAt     DateTime @default(now()) @db.DateTime(3)
+  updatedAt     DateTime @updatedAt @db.DateTime(3)
+  selectedSpecs Json?
+  cartItemId    String?  @db.VarChar(30)
+  order         Order    @relation(fields: [orderId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  book          Book     @relation(fields: [bookId], references: [id], onDelete: Restrict, onUpdate: Cascade)
+
+  @@index([bookId], map: "OrderItem_bookId_idx")
+}
+
+model Review {
+  id        String       @id @default(cuid()) @db.VarChar(30)
+  userId    String       @db.VarChar(30)
+  bookId    String       @db.VarChar(30)
+  rating    Int
+  comment   String?      @db.Text
+  status    RecordStatus @default(ACTIVE)
+  createdAt DateTime     @default(now()) @db.DateTime(3)
+  updatedAt DateTime     @updatedAt @db.DateTime(3)
+  user      User         @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  book      Book         @relation(fields: [bookId], references: [id], onDelete: Restrict, onUpdate: Cascade)
+
+  @@unique([userId, bookId], map: "Review_userId_bookId_key")
+  @@index([bookId, status], map: "Review_bookId_status_idx")
+}
+
+model Favorite {
+  userId    String   @db.VarChar(30)
+  bookId    String   @db.VarChar(30)
+  createdAt DateTime @default(now()) @db.DateTime(3)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  book      Book     @relation(fields: [bookId], references: [id], onDelete: Restrict, onUpdate: Cascade)
+
+  @@id([userId, bookId])
+  @@index([bookId], map: "Favorite_bookId_idx")
+}
+
+model NewsletterSubscriber {
+  id        String       @id @default(cuid()) @db.VarChar(30)
+  email     String       @unique @db.VarChar(254)
+  status    RecordStatus @default(ACTIVE)
+  createdAt DateTime     @default(now()) @db.DateTime(3)
+  updatedAt DateTime     @updatedAt @db.DateTime(3)
+
+  @@index([status, createdAt], map: "NewsletterSubscriber_status_createdAt_idx")
+}
+
+model Membership {
+  id          String       @id @default(cuid()) @db.VarChar(30)
+  level       String       @unique @db.VarChar(32)
+  name        String       @db.VarChar(80)
+  minPoints   Int          @default(0)
+  description String?      @db.Text
+  status      RecordStatus @default(ACTIVE)
+  createdAt   DateTime     @default(now()) @db.DateTime(3)
+  updatedAt   DateTime     @updatedAt @db.DateTime(3)
+
+  @@index([status, minPoints], map: "Membership_status_minPoints_idx")
+}
+
+model Promotion {
+  id             String       @id @default(cuid()) @db.VarChar(30)
+  code           String       @unique @db.VarChar(40)
+  name           String       @db.VarChar(120)
+  description    String?      @db.Text
+  discountType   DiscountType
+  discountValue  Decimal      @db.Decimal(10, 2)
+  minOrderAmount Decimal      @default(0) @db.Decimal(10, 2)
+  startsAt       DateTime     @db.DateTime(3)
+  endsAt         DateTime     @db.DateTime(3)
+  usageLimit     Int?
+  usedCount      Int          @default(0)
+  status         RecordStatus @default(ACTIVE)
+  createdAt      DateTime     @default(now()) @db.DateTime(3)
+  updatedAt      DateTime     @updatedAt @db.DateTime(3)
+  orders         Order[]
+
+  @@index([status, startsAt, endsAt], map: "Promotion_status_startsAt_endsAt_idx")
+}
+
+model GiftCard {
+  id           String       @id @default(cuid()) @db.VarChar(30)
+  code         String       @unique @db.VarChar(40)
+  initialValue Decimal      @db.Decimal(10, 2)
+  balance      Decimal      @db.Decimal(10, 2)
+  expiresAt    DateTime?    @db.DateTime(3)
+  status       RecordStatus @default(ACTIVE)
+  ownerId      String?      @db.VarChar(30)
+  createdAt    DateTime     @default(now()) @db.DateTime(3)
+  updatedAt    DateTime     @updatedAt @db.DateTime(3)
+  owner        User?        @relation(fields: [ownerId], references: [id], onDelete: SetNull, onUpdate: Cascade)
+
+  @@index([ownerId, status], map: "GiftCard_ownerId_status_idx")
+}
+
+model Gift {
+  id          String       @id @default(cuid()) @db.VarChar(30)
+  name        String       @db.VarChar(160)
+  description String?      @db.Text
+  imageUrl    String?      @db.VarChar(2048)
+  pointsCost  Int
+  stock       Int          @default(0)
+  status      RecordStatus @default(ACTIVE)
+  createdAt   DateTime     @default(now()) @db.DateTime(3)
+  updatedAt   DateTime     @updatedAt @db.DateTime(3)
+
+  @@index([status, pointsCost], map: "Gift_status_pointsCost_idx")
+}
+
+model Payment {
+  id             String        @id @default(cuid()) @db.VarChar(30)
+  orderId        String        @db.VarChar(30)
+  method         PaymentMethod
+  status         PaymentStatus @default(PENDING)
+  amount         Decimal       @db.Decimal(10, 2)
+  provider       String?       @db.VarChar(80)
+  transactionRef String?       @unique @db.VarChar(160)
+  paidAt         DateTime?     @db.DateTime(3)
+  createdAt      DateTime      @default(now()) @db.DateTime(3)
+  updatedAt      DateTime      @updatedAt @db.DateTime(3)
+  order          Order         @relation(fields: [orderId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  @@index([orderId, status], map: "Payment_orderId_status_idx")
+}
+
+model OrderStatusHistory {
+  id          String      @id @default(cuid()) @db.VarChar(30)
+  orderId     String      @db.VarChar(30)
+  status      OrderStatus
+  description String?     @db.VarChar(500)
+  createdAt   DateTime    @default(now()) @db.DateTime(3)
+  order       Order       @relation(fields: [orderId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  @@index([orderId, createdAt], map: "OrderStatusHistory_orderId_createdAt_idx")
+}
+
+model OptionGroup {
+  id        String       @id @default(cuid()) @db.VarChar(30)
+  bookId    String       @db.VarChar(30)
+  groupName String       @db.VarChar(120)
+  maxChoose Int          @default(1)
+  required  Boolean      @default(false)
+  createdAt DateTime     @default(now()) @db.DateTime(3)
+  updatedAt DateTime     @updatedAt @db.DateTime(3)
+  book      Book         @relation(fields: [bookId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  items     OptionItem[]
+
+  @@index([bookId], map: "OptionGroup_bookId_idx")
+}
+
+model OptionItem {
+  id         String      @id @default(cuid()) @db.VarChar(30)
+  groupId    String      @db.VarChar(30)
+  optionName String      @db.VarChar(120)
+  extraCost  Decimal     @default(0) @db.Decimal(10, 2)
+  createdAt  DateTime    @default(now()) @db.DateTime(3)
+  updatedAt  DateTime    @updatedAt @db.DateTime(3)
+  group      OptionGroup @relation(fields: [groupId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  @@index([groupId], map: "OptionItem_groupId_idx")
+}

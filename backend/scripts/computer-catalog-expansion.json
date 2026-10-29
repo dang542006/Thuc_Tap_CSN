@@ -1,0 +1,419 @@
+[
+  {
+    "slug": "amd-ryzen-5-7600-desktop-cpu",
+    "title": "AMD Ryzen 5 7600 Desktop Processor",
+    "brand": "AMD",
+    "category": "cpu",
+    "price": 4990000,
+    "stock": 4,
+    "type": "cpu",
+    "description": "Bộ xử lý desktop 6 nhân 12 luồng cho nền tảng AM5; hàng hóa và giá ở đây là catalog demo.",
+    "specifications": {
+      "socket": "AM5",
+      "architecture": "Zen 4",
+      "coresThreads": "6 nhân / 12 luồng",
+      "baseClock": "3.8 GHz",
+      "maxBoost": "Up to 5.1 GHz",
+      "L3Cache": "32 MB",
+      "defaultTDP": "65W",
+      "memory": "DDR5"
+    },
+    "imageFile": "amd-ryzen-5-7600-desktop-cpu-retailer.jpg",
+    "imageKind": "original-illustration",
+    "sourcePage": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600.html",
+    "imageSource": "Ảnh vector do project tự tạo; minh họa đúng loại thiết bị và tên model, không phải ảnh chụp sản phẩm."
+  },
+  {
+    "slug": "asus-vivobook-15-x1504va",
+    "title": "ASUS Vivobook 15 X1504VA",
+    "brand": "ASUS",
+    "category": "laptop-van-phong-hoc-tap",
+    "price": 16990000,
+    "stock": 8,
+    "type": "laptop",
+    "description": "Laptop 15,6 inch cho học tập và văn phòng, thiết kế mỏng nhẹ với màn hình Full HD.",
+    "specifications": {
+      "CPU": "Intel Core i5-1335U",
+      "RAM": "16GB DDR4",
+      "SSD": "512GB NVMe",
+      "display": "15,6 inch FHD IPS",
+      "graphics": "Intel Iris Xe",
+      "operatingSystem": "Windows 11"
+    },
+    "imageFile": "asus-vivobook-15-x1504va.webp",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "dell-inspiron-5440-i5-16gb",
+    "title": "Dell Inspiron 14 5440",
+    "brand": "Dell",
+    "category": "laptop-van-phong-hoc-tap",
+    "price": 18990000,
+    "stock": 7,
+    "type": "laptop",
+    "description": "Laptop 14 inch gọn nhẹ cho công việc di động, màn hình Full HD và bộ nhớ DDR5.",
+    "specifications": {
+      "CPU": "Intel Core i5-1334U",
+      "RAM": "16GB DDR5",
+      "SSD": "512GB NVMe",
+      "display": "14 inch FHD",
+      "graphics": "Intel Iris Xe",
+      "operatingSystem": "Windows 11"
+    },
+    "imageFile": "dell-inspiron-5440-i5-16gb.jpg",
+    "imageKind": "product-photo",
+    "sourcePage": "https://gearvn.com/products/laptop-dell-inspiron-5440-pus-i5-1334u-512gb-16gb-ddr5-14-fhd-w11-carbon-black-nhap-khau",
+    "imageSource": null
+  },
+  {
+    "slug": "acer-aspire-5-a515-58m-79r7",
+    "title": "Acer Aspire 5 A515-58M-79R7",
+    "brand": "Acer",
+    "category": "laptop-van-phong-hoc-tap",
+    "price": 21990000,
+    "stock": 6,
+    "type": "laptop",
+    "description": "Laptop đa dụng với Core i7 thế hệ 13, RAM 16GB và SSD NVMe 512GB.",
+    "specifications": {
+      "CPU": "Intel Core i7-1355U",
+      "RAM": "16GB DDR5",
+      "SSD": "512GB NVMe",
+      "display": "15,6 inch FHD IPS",
+      "graphics": "Intel Iris Xe",
+      "operatingSystem": "Windows 11"
+    },
+    "imageFile": "acer-aspire-5-a515-58m-79r7.png",
+    "imageKind": "product-photo",
+    "sourcePage": "https://gearvn.com/products/laptop-acer-aspire-5-a515-58m-79r7",
+    "imageSource": null
+  },
+  {
+    "slug": "lenovo-ideapad-slim-5-14irl8",
+    "title": "Lenovo IdeaPad Slim 5 14IRL8",
+    "brand": "Lenovo",
+    "category": "laptop-van-phong-hoc-tap",
+    "price": 17990000,
+    "stock": 5,
+    "type": "laptop",
+    "description": "Laptop 14 inch cân bằng giữa tính di động và hiệu năng cho học tập, làm việc.",
+    "specifications": {
+      "CPU": "Intel Core i5-1340P",
+      "RAM": "8GB LPDDR5",
+      "SSD": "512GB NVMe",
+      "display": "14 inch WUXGA IPS",
+      "graphics": "Intel Iris Xe"
+    },
+    "imageFile": "lenovo-ideapad-slim-5-14irl8.jpg",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "hp-15-fd-series",
+    "title": "HP 15 fd Series",
+    "brand": "HP",
+    "category": "laptop-van-phong-hoc-tap",
+    "price": 15990000,
+    "stock": 8,
+    "type": "laptop",
+    "description": "Dòng laptop HP 15 inch hướng đến học tập và văn phòng; cấu hình có thể thay đổi theo SKU.",
+    "specifications": {
+      "display": "15,6 inch Full HD",
+      "formFactor": "Laptop phổ thông",
+      "note": "Ảnh đại diện dòng sản phẩm; cấu hình thay đổi theo mã SKU."
+    },
+    "imageFile": "hp-15-fd-series.jpg",
+    "imageKind": "product-photo",
+    "sourcePage": "https://jp.ext.hp.com/notebooks/personal/hp_15_fd/",
+    "imageSource": null
+  },
+  {
+    "slug": "asus-tuf-gaming-a15-fa507nv",
+    "title": "ASUS TUF Gaming A15 FA507NV",
+    "brand": "ASUS",
+    "category": "laptop-gaming",
+    "price": 28990000,
+    "stock": 4,
+    "type": "laptop",
+    "description": "Laptop gaming 15,6 inch với GPU GeForce RTX 4060, phù hợp chơi game và sáng tạo nội dung.",
+    "specifications": {
+      "CPU": "AMD Ryzen 7 7735HS",
+      "RAM": "16GB DDR5",
+      "SSD": "512GB NVMe",
+      "display": "15,6 inch FHD 144Hz",
+      "graphics": "NVIDIA GeForce RTX 4060 8GB"
+    },
+    "imageFile": "asus-tuf-gaming-a15-fa507nv.webp",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "acer-nitro-v15-anv15-41-r2up",
+    "title": "Acer Nitro V 15 ANV15-41-R2UP",
+    "brand": "Acer",
+    "category": "laptop-gaming",
+    "price": 19990000,
+    "stock": 5,
+    "type": "laptop",
+    "description": "Laptop gaming phổ thông với màn hình 144Hz và đồ họa GeForce RTX 2050.",
+    "specifications": {
+      "CPU": "AMD Ryzen 5 6600H",
+      "RAM": "16GB DDR5",
+      "SSD": "512GB NVMe",
+      "display": "15,6 inch FHD 144Hz",
+      "graphics": "NVIDIA GeForce RTX 2050 4GB"
+    },
+    "imageFile": "acer-nitro-v15-anv15-41-r2up-retailer.jpg",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "wd-blue-sn580-1tb-nvme",
+    "title": "WD Blue SN580 1TB NVMe",
+    "brand": "Western Digital",
+    "category": "o-luu-tru",
+    "price": 1890000,
+    "stock": 12,
+    "type": "ssd",
+    "description": "Ổ SSD M.2 NVMe dung lượng 1TB cho máy tính tương thích, phù hợp mở rộng lưu trữ.",
+    "specifications": {
+      "capacity": "1TB",
+      "interface": "PCIe 4.0 x4 NVMe",
+      "formFactor": "M.2 2280",
+      "sequentialRead": "Up to 4150 MB/s"
+    },
+    "imageFile": "wd-blue-sn580-1tb-nvme-retailer.jpg",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "samsung-990-evo-plus-1tb",
+    "title": "Samsung 990 EVO Plus 1TB",
+    "brand": "Samsung",
+    "category": "o-luu-tru",
+    "price": 2590000,
+    "stock": 9,
+    "type": "ssd",
+    "description": "Ổ SSD M.2 NVMe 1TB cho máy tính và laptop hỗ trợ PCIe/NVMe.",
+    "specifications": {
+      "capacity": "1TB",
+      "interface": "PCIe 4.0 x4 / PCIe 5.0 x2 NVMe",
+      "formFactor": "M.2 2280",
+      "sequentialRead": "Up to 7150 MB/s"
+    },
+    "imageFile": "samsung-990-evo-plus-1tb-retailer.jpg",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "crucial-p3-plus-1tb",
+    "title": "Crucial P3 Plus 1TB",
+    "brand": "Crucial",
+    "category": "o-luu-tru",
+    "price": 1790000,
+    "stock": 10,
+    "type": "ssd",
+    "description": "Ổ lưu trữ NVMe PCIe Gen4 dung lượng 1TB cho máy tính tương thích.",
+    "specifications": {
+      "capacity": "1TB",
+      "interface": "PCIe 4.0 x4 NVMe",
+      "formFactor": "M.2 2280",
+      "sequentialRead": "Up to 5000 MB/s"
+    },
+    "imageFile": "crucial-p3-plus-1tb-retailer.jpg",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "asus-dual-geforce-rtx-4060-8gb",
+    "title": "ASUS Dual GeForce RTX 4060 8GB",
+    "brand": "ASUS",
+    "category": "gpu",
+    "price": 8490000,
+    "stock": 3,
+    "type": "gpu",
+    "description": "Card đồ họa hai quạt cho desktop, hỗ trợ các tính năng đồ họa NVIDIA RTX.",
+    "specifications": {
+      "GPU": "NVIDIA GeForce RTX 4060",
+      "memory": "8GB GDDR6",
+      "interface": "PCI Express 4.0",
+      "cooling": "2 quạt Axial-tech"
+    },
+    "imageFile": "asus-dual-geforce-rtx-4060-8gb-retailer.jpg",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "gigabyte-b760m-ds3h-ddr4",
+    "title": "Gigabyte B760M DS3H DDR4",
+    "brand": "Gigabyte",
+    "category": "mainboard",
+    "price": 2990000,
+    "stock": 5,
+    "type": "motherboard",
+    "description": "Bo mạch chủ Micro-ATX socket LGA1700 cho bộ xử lý Intel Core thế hệ 12, 13 và 14.",
+    "specifications": {
+      "socket": "LGA1700",
+      "chipset": "Intel B760",
+      "memory": "DDR4, 4 khe DIMM",
+      "formFactor": "Micro-ATX",
+      "storage": "2 khe M.2 PCIe 4.0"
+    },
+    "imageFile": "gigabyte-b760m-ds3h-ddr4-retailer.jpg",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "msi-mag-a650bn-650w",
+    "title": "MSI MAG A650BN 650W",
+    "brand": "MSI",
+    "category": "nguon-may-tinh",
+    "price": 1390000,
+    "stock": 7,
+    "type": "psu",
+    "description": "Bộ nguồn ATX 650W 80 PLUS Bronze cho cấu hình máy tính để bàn.",
+    "specifications": {
+      "power": "650W",
+      "efficiency": "80 PLUS Bronze",
+      "formFactor": "ATX",
+      "protection": "OCP / OVP / OPP / OTP / SCP"
+    },
+    "imageFile": "msi-mag-a650bn-650w.webp",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "deepcool-ak400-cpu-cooler",
+    "title": "DeepCool AK400",
+    "brand": "DeepCool",
+    "category": "tan-nhiet-cpu",
+    "price": 790000,
+    "stock": 8,
+    "type": "cooler",
+    "description": "Tản nhiệt khí dạng tháp đơn với quạt 120mm cho các cấu hình desktop tương thích.",
+    "specifications": {
+      "type": "Tản nhiệt khí tháp đơn",
+      "fan": "120mm PWM",
+      "heatPipes": "4 ống đồng",
+      "height": "155mm"
+    },
+    "imageFile": "deepcool-ak400-cpu-cooler-retailer.png",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "logitech-m331-silent-plus",
+    "title": "Logitech M331 Silent Plus",
+    "brand": "Logitech",
+    "category": "chuot",
+    "price": 390000,
+    "stock": 10,
+    "type": "mouse",
+    "description": "Chuột không dây yên tĩnh cho công việc văn phòng, kết nối USB receiver.",
+    "specifications": {
+      "connection": "Wireless 2.4GHz USB receiver",
+      "sensor": "1000 DPI",
+      "buttons": "3 nút",
+      "battery": "1 pin AA"
+    },
+    "imageFile": "logitech-m331-silent-plus-retailer.png",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "logitech-pebble-keys-2-k380s",
+    "title": "Logitech Pebble Keys 2 K380s",
+    "brand": "Logitech",
+    "category": "ban-phim",
+    "price": 790000,
+    "stock": 8,
+    "type": "keyboard",
+    "description": "Bàn phím Bluetooth nhỏ gọn, có thể ghép nối nhiều thiết bị.",
+    "specifications": {
+      "connection": "Bluetooth Low Energy",
+      "layout": "Compact 84 phím",
+      "devices": "Ghép nối tối đa 3 thiết bị",
+      "battery": "2 pin AAA"
+    },
+    "imageFile": "logitech-pebble-keys-2-k380s.webp",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "logitech-g435-lightspeed",
+    "title": "Logitech G435 LIGHTSPEED",
+    "brand": "Logitech",
+    "category": "tai-nghe-am-thanh",
+    "price": 1690000,
+    "stock": 5,
+    "type": "headset",
+    "description": "Tai nghe không dây nhẹ cho chơi game và giải trí, hỗ trợ kết nối 2.4GHz và Bluetooth.",
+    "specifications": {
+      "connection": "LIGHTSPEED 2.4GHz / Bluetooth",
+      "microphone": "Dual beamforming microphones",
+      "weight": "165g",
+      "audio": "40mm drivers"
+    },
+    "imageFile": "logitech-g435-lightspeed.png",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "razer-deathadder-essential",
+    "title": "Razer DeathAdder Essential",
+    "brand": "Razer",
+    "category": "chuot",
+    "price": 490000,
+    "stock": 7,
+    "type": "mouse",
+    "description": "Chuột gaming có dây với thiết kế công thái học cho người thuận tay phải.",
+    "specifications": {
+      "sensor": "Optical 6400 DPI",
+      "buttons": "5 nút Hyperesponse",
+      "connection": "USB có dây",
+      "design": "Công thái học tay phải"
+    },
+    "imageFile": "razer-deathadder-essential-retailer.jpg",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "logitech-c270-hd-webcam",
+    "title": "Logitech C270 HD Webcam",
+    "brand": "Logitech",
+    "category": "webcam",
+    "price": 590000,
+    "stock": 6,
+    "type": "webcam",
+    "description": "Webcam HD cho họp trực tuyến, có mic tích hợp và kẹp màn hình.",
+    "specifications": {
+      "resolution": "720p at 30fps",
+      "microphone": "Mono, giảm nhiễu",
+      "connection": "USB-A",
+      "fieldOfView": "60°"
+    },
+    "imageFile": "logitech-c270-hd-webcam-retailer.jpg",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "hyperx-cloud-stinger-2-core",
+    "title": "HyperX Cloud Stinger 2 Core",
+    "brand": "HyperX",
+    "category": "tai-nghe-am-thanh",
+    "price": 990000,
+    "stock": 4,
+    "type": "headset",
+    "description": "Tai nghe gaming có dây với mic xoay tắt tiếng và điều khiển âm lượng trên tai.",
+    "specifications": {
+      "connection": "3,5mm analog",
+      "driver": "40mm",
+      "microphone": "Mic xoay tắt tiếng",
+      "compatibility": "PC và thiết bị có cổng âm thanh 3,5mm"
+    },
+    "imageFile": "hyperx-cloud-stinger-2-core-retailer.jpg",
+    "imageKind": "original-illustration"
+  },
+  {
+    "slug": "tp-link-archer-tx20u-plus",
+    "title": "TP-Link Archer TX20U Plus",
+    "brand": "TP-Link",
+    "category": "ket-noi-mang",
+    "price": 690000,
+    "stock": 5,
+    "type": "wifi",
+    "description": "USB adapter Wi-Fi 6 hai băng tần với ăng-ten ngoài có thể điều chỉnh.",
+    "specifications": {
+      "wireless": "Wi-Fi 6 AX1800",
+      "bands": "2,4GHz và 5GHz",
+      "interface": "USB 3.0",
+      "security": "WPA3"
+    },
+    "imageFile": "tp-link-archer-tx20u-plus.jpg",
+    "imageKind": "original-illustration"
+  }
+]

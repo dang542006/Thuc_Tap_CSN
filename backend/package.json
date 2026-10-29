@@ -1,0 +1,38 @@
+{
+  "name": "bookshop-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "TechStore REST API built with Express, Prisma, and MySQL",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:deploy": "prisma migrate deploy",
+    "db:seed": "node prisma/seed.js",
+    "catalog:expand": "node scripts/expand-computer-catalog.js",
+    "catalog:pc-builder:expand": "node scripts/import-pc-builder-catalog.js",
+    "catalog:pc-builder:enrich": "node scripts/enrich-pc-builder-specifications.js",
+    "catalog:pc-builder:verify": "node scripts/verify-pc-builder-catalog.js",
+    "admin:bootstrap": "node scripts/bootstrap-admin.js",
+    "admin:reset-password": "node scripts/reset-admin-password.js",
+    "admin:verify": "node scripts/verify-admin-bootstrap.js"
+  },
+  "dependencies": {
+    "@prisma/client": "6.12.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.7.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.4.0",
+    "pino": "^9.6.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "prisma": "6.12.0"
+  }
+}

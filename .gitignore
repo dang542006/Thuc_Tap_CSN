@@ -1,0 +1,36 @@
+# Dependencies and generated frontend output
+**/node_modules/
+**/__pycache__/
+*.py[cod]
+.cache/
+frontend/dist/
+backend/dist/
+backend/build/
+
+# Local secrets (keep the checked-in examples)
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local user uploads and backups; catalog product assets remain trackable
+backend/uploads/books/
+backend/.local-backups/
+
+# Root-level npm lockfile is not used (backend and frontend have their own)
+/package-lock.json
+
+# Local UI preview screenshots are not source documentation
+docs/*-preview.jpg
+
+# Logs and local test artifacts
+*.log
+npm-debug.log*
+*.dump
+*.sql.gz
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.backup
+Thumbs.db
+.DS_Store

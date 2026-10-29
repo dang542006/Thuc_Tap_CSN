@@ -1,0 +1,42 @@
+{
+  "records": [
+    {
+      "id": "cmuzni42e000hvo7w1eiou2ji",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "image": null
+    },
+    {
+      "id": "cmuzni42e000ivo7wfwmv7cet",
+      "title": "Đừng Lựa Chọn An Nhàn Khi Còn Trẻ",
+      "author": "Cảnh Thiên",
+      "image": null
+    },
+    {
+      "id": "cmuzni42e000gvo7wrm8ggflz",
+      "title": "Nhà Giả Kim",
+      "author": "Paulo Coelho",
+      "image": null
+    }
+  ],
+  "references": [
+    {
+      "title": "Nhà Giả Kim",
+      "author": "Paulo Coelho",
+      "image": "/uploads/books/nha-gia-kim-reference.webp",
+      "source": "https://www.fahasa.com/nha-gia-kim-tai-ban-2020.html"
+    },
+    {
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "image": "/uploads/books/clean-code-reference.jpg",
+      "source": "https://www.informit.com/store/clean-code-a-handbook-of-agile-software-craftsmanship-9780132350884"
+    },
+    {
+      "title": "Đừng Lựa Chọn An Nhàn Khi Còn Trẻ",
+      "author": "Cảnh Thiên",
+      "image": "/uploads/books/dung-lua-chon-an-nhan-reference.jpg",
+      "source": "https://www.fahasa.com/dung-lua-chon-an-nhan-khi-con-tre.html"
+    }
+  ]
+}
